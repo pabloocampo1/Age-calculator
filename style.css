@@ -1,0 +1,253 @@
+:root{
+    /* color primary */
+    --Purple: hsl(259, 100%, 65%)
+    --Light--red: hsl(0, 100%, 67%)
+    /* neutral */
+    --White: hsl(0, 0%, 100%)
+    --Off--white: hsl(0, 0%, 94%)
+    --Light--grey: hsl(0, 0%, 86%)
+    --Smokey--grey: hsl(0, 1%, 44%)
+    --Off--black: hsl(0, 0%, 8%)
+}
+
+
+.inactive{
+    display: none;
+}
+.colorWhile{
+    color: hsl(0, 0%, 30%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color:hsl(0, 0%, 94%) ;
+    
+}
+
+
+/* header */
+#header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    margin-bottom: 20px;
+}
+.header__title{
+    width: 60%;
+    height: 100%;
+}
+.header__title .title-age{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: hsl(259, 100%, 65%);
+}
+.header__title .title-text{
+    color: black;
+}
+.header__option{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header__option div{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.header__option div img{
+    width: 50px;
+    height: 50px;
+}
+/* main */
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px 0px;
+    border-radius: 4% 4% 40% 4%;
+    border-color: hsl(0, 0%, 86%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* dates styles */
+
+.container__dates{
+    margin: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.container__dates div{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 3%;
+}
+.container__dates div p{
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    padding-bottom: 5px;
+}
+.container__dates div .input{
+    width: 90px;
+    height: 50%;
+    border-radius: 10px;
+    border:2px solid hsl(0, 0%, 86%);
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+.container__dates div .input:focus{
+    border:3px solid hsl(259, 100%, 65%);
+}
+.input::placeholder{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+/* text error */
+.text_error_day{
+    text-align: center; 
+    font-size: 1.2rem;
+}
+.text_error_month{
+    text-align: center; 
+    font-size: 1.2rem;
+}
+.text_error_year{
+    text-align: center; 
+    font-size: 1.2rem;
+}
+
+/* line */
+
+
+.container__line{
+    margin: 20px 10px 10px 10px;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.container__line div{
+    background-color: hsl(0, 0%, 90%) ;
+    width: 100%;
+    height: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container__line div .button{
+    border: 3px solid  hsl(0, 0%, 90%);
+    width: 120px;
+    height: 45px;
+    position: absolute;
+    top: -700%;
+    font-family:'Poppins', sans-serif; ;
+    border-radius: 10px;
+    background-color: white;
+   font-weight: 700;
+   font-size: 1.6rem;
+   letter-spacing: 2.5px;
+}
+
+/* result */
+.container__result{
+    height: auto;
+    margin: 10px;
+    padding-top: 50px;
+}
+.container__result p{
+    font-size: 3.1rem;
+    font-weight: bold;
+    padding: 10px;
+}
+.container__result span{
+    color:  hsl(259, 100%, 65%);
+}
+
+/* masage */
+.section__masage{
+    margin:30px 40px;
+    max-width: 700px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 10px rgb(98, 96, 96);
+    border-radius: 5px;
+}
+.section__masage p{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color:  hsl(259, 100%, 65%);
+}
+.section__masage p span{
+   
+    color:  hsl(259, 0%, 0%);
+}
+
+/* footer */
+
+.footer{
+    height: 10vh; 
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer div{
+    text-align: center;
+    font-size: 1.6rem;
+}
+.footer div p{
+    color: hsl(0, 0%, 30%);
+}
+.footer div a{
+    color: hsl(217, 67%, 57%);
+    text-decoration: none;
+}
+
+/* media querya */
+
+
+ @media (min-width:600px) {
+    .footer{
+        position: absolute;
+        bottom: 0%;
+       
+    }
+}
+ @media (min-height:700px) {
+    .footer{
+        position: absolute;
+        bottom: 0%;
+    }
+}

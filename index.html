@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=".//breikpints/destok.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+    </head>
+    <body>
+
+    <!-- header -->
+    <header id="header">
+        <div class="header__title">
+        <h2 class="title-age">Age <span class="title-text" >Calculator</span></h2>
+        </div>
+        <div class="header__option">
+        <div><img id="icon-darkmode" src=".//assets//images//svg-icon/noun-moon-5509214.svg" alt="DarkMode"><img id="icon-sonmode" class="inactive" src="./assets/images/svg-icon/sun-icon-150x150.png" alt="sonmode"></div>
+        </div>
+    </header>
+    <!-- main -->
+    <main id="main">
+        <div class="container">
+          <div class="container__dates">
+            <div>
+            <p>DAY</p>
+            <input placeholder="DD" class="input-day input" type="number" required>
+            <p class="text_error_day"></p>
+            </div>
+            <div>
+            <p >MONTH</p>
+            <input placeholder="MM" class="input-month input" type="number"  required>
+            <p class="text_error_month"></p>
+            </div>
+            <div>
+            <p>YEAR</p>
+            <input placeholder="YY" class="input-year input" type="number"  required>
+            <p class="text_error_year"></p>
+            </div>
+            
+          </div>
+          <div class="container__line">
+            <div><button class="button button_reset">Reset</button></div>
+            <div><button class="button button_calculator">Calculate</button></div>
+          </div>
+          <div class="container__result">
+            <p class="text_result-year"><span class="text_result_year">--</span>  years</p>
+            <p class="text_result-month"><span class="text_result_month">--</span>  months</p>
+            <p class="text_result-day"><span class="text_result_day">--</span>  days</p>
+            
+          </div>
+        </div>
+        <section>
+          <div class="section__masage">
+            <p>your age is <span class="masage-span">...</span> year old</p>
+          </div>
+        </section>
+    </main>
+
+    
+
+    <footer class="footer">
+      <div>
+        <p></a>
+          Coded by <a href="#">Pablo Ocampo</a>.</p>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    </body>
+    </html>
